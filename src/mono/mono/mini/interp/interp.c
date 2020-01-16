@@ -169,6 +169,7 @@ frame_stack_alloc_ovf (FrameStack *stack, int size, StackFragment **out_frag)
 static MONO_ALWAYS_INLINE gpointer
 frame_stack_alloc (FrameStack *stack, int size, StackFragment **out_frag)
 {
+	/* l33t h4cks */
 	StackFragment *current = stack->current;
 	gpointer res;
 
