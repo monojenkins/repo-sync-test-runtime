@@ -2,8 +2,8 @@
 # Copyright 2011 Xamarin, Inc (http://www.xamarin.com)
 # Licensed under the MIT license. See LICENSE file in the project root for full license information.
 # arm cpu description file
-# this file is read by genmdesc to pruduce a table with all the relevant information
-# about the cpu instructions that may be used by the regsiter allocator, the scheduler
+# this file is read by genmdesc to produce a table with all the relevant information
+# about the cpu instructions that may be used by the register allocator, the scheduler
 # and other parts of the arch-dependent part of mini.
 #
 # An opcode name is followed by a colon and optional specifiers.
@@ -21,7 +21,7 @@
 #	f  floating point register
 #	g  floating point register returned in r0:r1 for soft-float mode
 #
-# len:number         describe the maximun length in bytes of the instruction
+# len:number         describe the maximum length in bytes of the instruction
 # number is a positive integer
 #
 # cost:number        describe how many cycles are needed to complete the instruction (unused)
@@ -113,7 +113,7 @@ tailcall_reg: src1:b len:255 clob:c # FIXME len
 # }
 #
 # In current implementation with 4K limit this is typically
-# two full instructions, howevever raising the limit some
+# two full instructions, however raising the limit some
 # can lead two instructions and two thumb instructions.
 # FIXME A fixed size sequence to move parameters would moot this.
 tailcall_parameter: len:12

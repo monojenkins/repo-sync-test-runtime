@@ -1,6 +1,6 @@
 # mips cpu description file
-# this file is read by genmdesc to pruduce a table with all the relevant
-# information about the cpu instructions that may be used by the regsiter
+# this file is read by genmdesc to produce a table with all the relevant
+# information about the cpu instructions that may be used by the register
 # allocator, the scheduler and other parts of the arch-dependent part of mini.
 #
 # An opcode name is followed by a colon and optional specifiers.
@@ -23,7 +23,7 @@
 #	f  floating point register (pair - always)
 #	g  floating point register return pair (f0/f1)
 #
-# len:number         describe the maximun length in bytes of the instruction
+# len:number         describe the maximum length in bytes of the instruction
 # number is a positive integer
 #
 # cost:number        describe how many cycles are needed to complete the instruction (unused)
